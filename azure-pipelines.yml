@@ -20,13 +20,14 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
+
 - task: SonarCloudPrepare@1
   inputs:
-    SonarCloud: 'ChristopheSC'
-    organization: 'christophehavard'
+    SonarCloud: 'GH SC'
+    organization: 'tom-howlett-sonarsource'
     scannerMode: 'MSBuild'
-    projectKey: 'christophehavard_DotNet5WebApi_SC'
-    projectName: 'DotNet5WebApi_SC'
+    projectKey: 'tom-howlett-sonarsource_DotNet5WebApi'
+    projectName: 'DotNet5WebApi'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
