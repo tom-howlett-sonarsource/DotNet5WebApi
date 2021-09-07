@@ -23,7 +23,7 @@ steps:
 
 - task: SonarCloudPrepare@1
   inputs:
-    SonarCloud: 'GH SC'
+    SonarCloud: 'ChristopheSC'
     organization: 'tom-howlett-sonarsource'
     scannerMode: 'MSBuild'
     projectKey: 'tom-howlett-sonarsource_DotNet5WebApi'
