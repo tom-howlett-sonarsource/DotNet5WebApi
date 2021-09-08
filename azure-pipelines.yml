@@ -26,8 +26,8 @@ steps:
     SonarCloud: 'ChristopheSC'
     organization: 'christophehavard'
     scannerMode: 'MSBuild'
-    projectKey: 'tom-howlett-sonarsource_DotNet5WebApi'
-    projectName: 'DotNet5WebApi'
+    projectKey: 'christophehavard_DotNet5WebApi_SC'
+    projectName: 'DotNet5WebApi_SC'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
