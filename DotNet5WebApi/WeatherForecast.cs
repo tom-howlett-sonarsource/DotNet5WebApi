@@ -10,10 +10,7 @@ namespace DotNet5WebApi
 
         public float TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 
-        public bool IsFreezing()
-        {
-            return TemperatureC < 0;
-        }
+        public bool IsFreezing => TemperatureC < 0;
 
         public string Summary { get; set; }
     }
