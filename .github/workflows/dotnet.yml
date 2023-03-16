@@ -48,7 +48,7 @@ jobs:
         shell: powershell
         run: |
           dotnet restore
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"tom-howlett-sonarsource_DotNet5WebApi" /o:"tom-howlett-sonarsource" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.pullrequest.base=master /d:sonar.pullrequest.branch=inctest2 /d:sonar.pullrequest.key=42 /d:sonar.verbose=true
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"tom-howlett-sonarsource_DotNet5WebApi" /o:"tom-howlett-sonarsource" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.pullrequest.base=master /d:sonar.pullrequest.branch=inctest2 /d:sonar.pullrequest.key=3 /d:sonar.verbose=true
           dotnet build --no-restore
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
 
