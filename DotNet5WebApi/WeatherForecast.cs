@@ -16,6 +16,6 @@ namespace DotNet5WebApi
             return TemperatureC <= 0;
         }
 
-        public string Summary { get; set;  }
+        public string Summary { get; set; }
     }
 }
