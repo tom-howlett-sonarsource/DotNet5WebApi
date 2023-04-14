@@ -12,6 +12,7 @@ namespace DotNet5WebApi
 
         public bool IsFreezing()
         {
+            int notused = 1;
             return TemperatureC <= 0;
         }
 
