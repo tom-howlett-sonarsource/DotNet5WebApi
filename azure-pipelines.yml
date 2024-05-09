@@ -28,6 +28,8 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'christophehavard_DotNet5WebApi_SC'
     projectName: 'DotNet5WebApi_SC'
+    extraProperties: |
+      sonar.verbose=true
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
